@@ -36,10 +36,7 @@
       "version": "",
       "locator": "ios"
     },
-    {
-      "platform": "android",
-      "locator": "browser"
-    }
+    "android"
   ],
   "name": "mtaas-app",
   "description": "MTaaS-App: An Ionic project"
