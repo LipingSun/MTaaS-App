@@ -15,6 +15,10 @@
   </ion-card>
 </ion-content>
 
-<ion-toolbar primary position="bottom">
+<ion-toolbar primary position="bottom" *ngIf="!connected">
   <button block light large clear (click)="connect()">Connect</button>
+</ion-toolbar>
+
+<ion-toolbar danger position="bottom" *ngIf="connected">
+  <button block light large clear (click)="disconnect()">DISCONNECT</button>
 </ion-toolbar>
